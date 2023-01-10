@@ -66,13 +66,13 @@
             if (!audio) return; // stop the function from running all together
             audio.currentTime = 0; // rewind to the start
             audio.play();
-            console.log(key);
+            // console.log(e.keyCode);
             key.classList.add('playing');
         }
 
         function removeTransition(e) {
             if (e.propertyName !== 'transform') return; // skip if it is not a transform
-            console.log(e);
+            // console.log(e.propertyName);
             this.classList.remove('playing');
         }
 
